@@ -1,112 +1,192 @@
-// Question NO 02
+console.log("Question 31 to 40")
+// Question NO # 31
 
-console.log("Question NO 02")
+console.log(" Question NO # 31")
 
-var a = 'john';
-console.log("Hello " + a  + ", would you like to learn some python today?")
+var personAge = 22;
 
-// Question NO 03
+if(personAge < 2){
+    console.log("The person is a baby")
+}
 
-console.log("Question NO 03")
+else if (personAge > 2 && personAge < 4){
+    console.log(" the person is a toddler.")
+}
 
-var b = "jack";
-// lowercase
-console.log(b.toLowerCase()) 
+else if (personAge >= 4 && personAge < 13){
+    console.log(" the person is a Kid.")
+}
 
-// upper Case
-console.log(b.toUpperCase())
+else if (personAge >= 13 && personAge < 20){
+    console.log(" the person is a Teenager.")
+}
 
-// title case
-// console.log(b.toTitleCase())
+else if (personAge >= 20 && personAge < 65){
+    console.log(" the person is a Adult.")
 
+}
 
-// Question NO 04
+else if (personAge >=65 ){
+    console.log(" the person is a elder.")
+}
 
-console.log("Question NO 04")
-
-var NameOfPerson = "unknown"
-var quote = '"Get comfortable with being uncomfortable"';
-console.log(NameOfPerson + " once said. " +  quote)
-
-// Question NO 05
-
-console.log("Question NO 05")
-
-var famous_person = "unknown Person";
-var message = '"what we know is drop what we dont know is an ocean"'
-console.log(famous_person + " once said " + message)
-
-
-// Question NO 06
-
-console.log("Question NO 06")
-
-var person_name = " \n\n MUHAMMAD BILAL ZAFAR KHAN \t";
-console.log(person_name);
-console.log(person_name.trim());
-
-
-// Question NO 07
-
-console.log("Question NO 07")
-
-// Addition
-var a = 5
-var b = 3
-
-var add = a + b
-console.log(add)
-
-// Subtraction
-var c = 10
-var d = 2
-
-var sub = c - d;
-console.log(sub)
-
-// Multiplication
-var e = 4;
-var f = 2;
-
-var multi = e * f;
-
-console.log(multi)
-
-
-// Division
-
-var g = 16;
-var h = 2;
-
-var div = 16/2;
-
-console.log(div)
+else {
+    console.log("Enter Your age")
+}
 
 
 
-// Question NO 8
+// Question NO # 32
 
-console.log("Question NO 08")
+console.log("Question NO # 32")
 
-console.log(6+2);
-console.log(10-2);
-console.log(4*2);
-console.log(16/2);
+var new_users = ['Jerry' , 'Eric' , 'Mark' , 'Chris' , 'Harry']
+var current_users = ['Eric' , 'John' , 'Alex' , 'Admin' , 'Chris']
 
 
-// Question NO 9 
+for (let i = 0; i < new_users.length; i++) {
+    for(let j=0; j < current_users.length; j++){
+        if(new_users[i] == current_users[j]){
+            console.log("This username is not available!")
+        }
+        else{
+            console.log("This username is available!")
+        }
+    }
 
-console.log("Question NO 09")
+}
 
-fav_num = 2;
-console.log("your favourite number is " + fav_num)
 
-// Question NO 10
+// Question NO # 33
 
-console.log("Question NO 10")
+console.log(" Question NO # 33")
 
-var person_name = "Bilal";      //storing Student name in a variable
-var age = 22;            //storing Student age in a variable
+const ordinalNUmbers = [1,2,3,4,5,6,7,8,9]
 
-console.log("The Student name is " + person_name + " and his age is " + age );      // printing the statement
+for(let i = 0; i < ordinalNUmbers.length; i++){
+    if (ordinalNUmbers[i] == 1 ){
+        console.log(ordinalNUmbers[i] + "st")
+    }
+    if(ordinalNUmbers[i] == 2){
+        console.log(ordinalNUmbers[i] + "nd")
+    }
+    if(ordinalNUmbers[i] == 3){
+        console.log(ordinalNUmbers[i] + "rd")
+    }
+    if(ordinalNUmbers[i] > 3){
+        console.log(ordinalNUmbers[i] + "th")
+    }
+
+}
+
+
+// Question NO # 34
+
+console.log(" Question NO # 34")
+
+const pizza = ["Tikka" , "Peperonni" , "Fajita"]
+
+for (let i = 0; i < pizza.length; i++){
+    if(pizza[i] == "Tikka"){
+        console.log("I like " + pizza[i] + " Pizza" )
+    }
+    if(pizza[i] == "Peperonni"){
+        console.log("I like " + pizza[i] + " Pizza" )
+    }
+    if(pizza[i] == "Fajita"){
+        console.log("I like " + pizza[i] + " Pizza" )
+    }
+}
+
+console.log("My favourite pizza is " + pizza[2] + ". Its a desi flavour with a fine test. I suggest you to try it ")
+
+
+// Question NO # 35
+
+console.log(" Question NO # 35")
+
+const animals = ["Cat" , "Dog" , "Goat"]
+
+// for(let i =0; i<animals.length; i++){
+//     console.log(animals[i] + " are pet")
+// }   
+// console.log(  "They all are Pet Animals")
+
+
+for (let i = 0; i < animals.length; i++) {
+    console.log(  animals[i]  + " is a pet animal")
+    
+}
+
+console.log("They all are Tetrapoda which means they all have four legs")
+
+
+
+// Question NO # 36
+
+console.log(" Question NO # 36")
+
+const shirt_make =  (message,  size) => {
+    console.log(message + size)
+
+}
+
+shirt_make("My Shirt size is " , 8)
+ 
+
+// Question NO # 37
+
+console.log(" Question NO # 37")
+
+shirt_make("I love JavaScript" , "large")
+shirt_make("I love React" , "Medium")
+shirt_make("I love TypeScript" , "Small")
+
+
+// Question NO # 38
+
+console.log(" Question NO # 38")
+
+const describe_city = (city = "karachi" , country = "Pakistan") =>{
+    console.log( city + " is in " + country) 
+
+}
+
+describe_city()
+describe_city("Frankfurt" , "Germany")
+describe_city("Los Angeles","USA")
+describe_city("Baku" , "Azerbaijan ")
+
+
+// Question NO # 39
+
+console.log(" Question NO # 39")
+
+const city_country = (city,country) => {
+    console.log(`"${city} , ${country}"`)
+}
+
+city_country("Karachi" , "Pakistan")
+city_country("London" , "UK")
+city_country("Dubai" , "UAE")
+
+
+// Question NO # 40
+
+console.log(" Question NO # 40")
+
+
+const make_album = (artistName,albumTitle,numberOfTracks) => {
+    Album = {
+        "Artist Name" : artistName,
+        "Album Title": albumTitle,
+        "Number Of Tracks": numberOfTracks
+    }
+    return Album
+
+}
+
+console.log(make_album("Atif Aslam" , "Jal"))
+console.log(make_album("Purpose" , "Justin Beiber" , 15))
+console.log(make_album("Divide" , "Ed Sheeran"))
 
